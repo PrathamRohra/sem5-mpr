@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>House Price Prediction</title>
+  </head>
+  <body>
+
+    <section class="h-full dotted-background">
+      <div class="flex justify-center">
+        <img src="./assets/mpr-bg.jpeg" alt="bg" class="-mt-5 w-11/12 h-[520px] rounded-3xl" />
+      </div>
+      <!-- <div class="-mt-14 w-10/12 flex self-center justify-center items-center shadow-2xl bg-white shadow-black rounded-3xl h-full">
+        <div class="bg-white w-full h-full">
+          <h1 class="font-bold text-2xl text-center">Let's calculate for you</h1>
+        </div>
+      </div>       -->
+      <div class="flex flex-col items-center justify-center -mt-14">
+        <div class="bg-white min-h-[540px] py-6 drop-shadow-xl shadow-black w-10/12 rounded-3xl px-10">
+            <h1 class="font-semibold text-3xl mt-8 text-blue-800 text-center">Let's calculate for you</h1>
+            
+            <!--The form part and stuff starts from here-->
+            <div class="mt-14">
+                <form class="flex flex-col items-center justify-center">
+                    <div class="my-10 flex flex-col items-center">
+                        <p class="text-center text-xl">What's your preferred living space area in square feet? <span class="text-red-600">*</span></p>
+                        <input type="" id="uiSqft" class="mt-2 text-center h-10 w-[340px] outline-none p-2 text-xs border-b border-gray-400 focus:border-b focus:border-blue-700 active:border-blue-500"> <span class="text-sm">sq.ft</span>
+                    </div>
+
+                    
+                    <div class="mt-10">
+                        <p class="text-center text-xl">Tell us how many bedrooms you're seeking <span class="text-red-600">*</span></p>
+                        <ul class="flex space-x-8 my-6 max-w-md">
+                            <li class="relative">
+                              <input class="sr-only peer" type="radio" value="yes" name="bhk" id="bhk1">
+                              <label class="flex p-5 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-600 peer-checked:ring-2 peer-checked:border-transparent" for="bhk1">1</label>
+                          
+                            <li class="relative">
+                              <input class="sr-only peer" type="radio" value="no" name="bhk" id="bhk2">
+                              <label class="flex p-5 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-600 peer-checked:ring-2 peer-checked:border-transparent" for="bhk2">2</label>
+                             </li>
+                          
+                            <li class="relative">
+                              <input class="sr-only peer" type="radio" value="maybe" name="bhk" id="bhk3">
+                              <label class="flex p-5 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-600 peer-checked:ring-2 peer-checked:border-transparent" for="bhk3">3</label>
+                            </li>
+
+                            <li class="relative">
+                                <input class="sr-only peer" type="radio" value="maybe" name="bhk" id="bhk4">
+                                <label class="flex p-5 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-600 peer-checked:ring-2 peer-checked:border-transparent" for="bhk4">4</label>
+                            </li>
+
+                            <li class="relative">
+                                <input class="sr-only peer" type="radio" value="maybe" name="bhk" id="bhk5">
+                                <label class="flex p-5 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-600 peer-checked:ring-2 peer-checked:border-transparent" for="bhk5">5</label>
+                            </li>
+                          </ul>
+                    </div>
+
+                    <div class="mt-12">
+                        <p class="text-center tex-xl">Tell us how many bathrooms you're seeking <span class="text-red-600">*</span></p>
+                        <ul class="flex space-x-8 my-6 max-w-md">
+                            <li class="relative">
+                              <input class="sr-only peer" type="radio" value="yes" name="bath" id="bd1">
+                              <label class="flex p-5 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-600 peer-checked:ring-2 peer-checked:border-transparent" for="bd1">1</label>
+                          
+                            <li class="relative">
+                              <input class="sr-only peer" type="radio" value="no" name="bath" id="bd2">
+                              <label class="flex p-5 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-600 peer-checked:ring-2 peer-checked:border-transparent" for="bd2">2</label>
+                             </li>
+                          
+                            <li class="relative">
+                              <input class="sr-only peer" type="radio" value="maybe" name="bath" id="bd3">
+                              <label class="flex p-5 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-600 peer-checked:ring-2 peer-checked:border-transparent" for="bd3">3</label>
+                            </li>
+
+                            <li class="relative">
+                                <input class="sr-only peer" type="radio" value="maybe" name="bath" id="bd4">
+                                <label class="flex p-5 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-600 peer-checked:ring-2 peer-checked:border-transparent" for="bd4">4</label>
+                            </li>
+
+                            <li class="relative">
+                                <input class="sr-only peer" type="radio" value="maybe" name="bath" id="bd5">
+                                <label class="flex p-5 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-600 peer-checked:ring-2 peer-checked:border-transparent" for="bd5">5</label>
+                            </li>
+                          </ul>
+                    </div>
+
+                    <!--LOCATION DROPDOWN-->
+                    <div class="mt-12">
+                        <p class="text-center tex-xl">Choose your preferred location <span class="text-red-600">*</span></p>
+                        <div class="relative mt-4">
+                            <select id="uiLocations" class="text-center block appearance-none w-[440px] h-12 bg-white border border-gray-400 px-4 py-2 rounded focus:outline-none focus:border-blue-700">
+                                <option value="location1">Location 1</option>
+                                <option value="location2">Location 2</option>
+                                <option value="location3">Location 3</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-12">
+                        <p class="text-center text-xl">Choose a machine learning model <span class="text-red-600">*</span></p>
+                        <ul class="flex space-x-8 my-6">
+                            <li class="relative">
+                                <input class="sr-only peer" type="radio" value="Linear Regression" name="mlModel" id="model1">
+                                <label class="flex px-3 py-4 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-500 peer-checked:ring-2 peer-checked:border-transparent" for="model1">Linear Regression (Recommended)</label>
+                            </li>
+                    
+                            <li class="relative">
+                                <input class="sr-only peer" type="radio" value="Lasso Regression" name="mlModel" id="model2">
+                                <label class="flex px-3 py-4 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover-bg-gray-50 peer-checked:ring-blue-500 peer-checked:ring-2 peer-checked:border-transparent" for="model2">Lasso Regression</label>
+                            </li>
+                    
+                            <li class="relative">
+                                <input class="sr-only peer" type="radio" value="Decision Tree" name="mlModel" id="model3">
+                                <label class="flex px-3 py-4 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-500 peer-checked:ring-2 peer-checked:border-transparent" for="model3">Decision Tree</label>
+                            </li>
+                        </ul>
+                    </div>   
+                    
+                    <!--SUBMIT BUTTON-->
+                    <div class="mt-12">
+                            <button type="button" onclick="onClickedEstimatePrice()" class="bg-blue-600 w-[240px] text-white py-3 px-6 rounded-lg hover:bg-blue-700 estimate-button">Estimate Price</button>
+                    </div>
+                </form>
+
+                <div class="mt-12 font-bold text-xl p-2 rounded-xl text-center">
+                  <p class="text-2xl">The estimated price is: <span class="estimated-price" id="uiEstimatedPrice"></span></p>
+                </div>
+                
+            </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+
+  </body>
+</html>

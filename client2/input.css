@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom CSS for the dotted background */
+.dotted-background {
+    background-image: radial-gradient(lightblue 1px, transparent 1px);
+    background-size: 20px 20px; /* Adjust this size to control the density and spacing of dots */
+}
+
+.dotted-background2 {
+    background-image: radial-gradient(lightblue 1px, transparent 1px);
+    background-size: 20px 20px; /* Adjust this size to control the density and spacing of dots */
+}
+
+  
+  
