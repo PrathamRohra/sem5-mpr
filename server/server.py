@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify
 import util
 
-
 app = Flask(__name__)
 
 @app.route('/get_location_names', methods=['GET'])
@@ -19,9 +18,10 @@ def predict_home_price():
     location = request.form['location']
     bhk = int(request.form['bhk'])
     bath = int(request.form['bath'])
+    model_type = request.form['model_type']  # Add a model_type field in the request
 
     response = jsonify({
-        'estimated_price': util.get_estimated_price(location,total_sqft,bhk,bath)
+        'estimated_price': util.get_estimated_price(location, total_sqft, bhk, bath, model_type)
     })
     response.headers.add('Access-Control-Allow-Origin', '*')
 
